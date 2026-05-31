@@ -1,0 +1,35 @@
+name: quran_play
+description: "Quran Play is a Flutter application that allows users to search Surahs, stream Quran recitations, and control audio playback."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  dio: ^5.9.2
+  flutter:
+    sdk: flutter
+  flutter_screenutil: ^5.9.3
+  get: ^4.7.3
+  intl: ^0.20.2
+  just_audio: ^0.9.44
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.4
+  build_runner: ^2.4.15
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.4.6
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/quran.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
