@@ -202,44 +202,6 @@ Download the latest APK from the [**GitHub Releases**](https://github.com/lionel
 > ✅ Works on **all Android devices** — Android 5.0 (API 21) or higher.
 
 ---
-
-## 🔄 CI / CD Pipeline
-
-This project uses **GitHub Actions** to automatically build and publish releases.
-
-### How to release a new version
-
-```bash
-# 1. Update version in pubspec.yaml
-#    e.g. version: 1.1.0+2
-
-# 2. Commit your changes
-git add .
-git commit -m "chore: bump version to v1.1.0"
-
-# 3. Create and push a version tag
-git tag v1.1.0
-git push origin main --tags
-```
-
-GitHub Actions will automatically:
-1. ✅ Analyze the code
-2. 🧪 Run tests
-3. 🔨 Build release APK (split per ABI)
-4. 🎉 Publish to GitHub Releases with download links
-
-Workflow file: [`.github/workflows/release.yml`](.github/workflows/release.yml)
-
----
-
-## 📄 License
-
-MIT License © 2025 [Your Name](https://github.com/lionelyayan)
-
-See [LICENSE](LICENSE) for details.
-
----
-
 <div align="center">
   <p>Made with ❤️ and Flutter</p>
   <p>
