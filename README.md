@@ -10,7 +10,22 @@
     <img src="https://img.shields.io/badge/just__audio-0.9.x-EF4444" />
     <img src="https://img.shields.io/badge/License-MIT-green" />
   </p>
+  <p>
+    <a href="https://github.com/lionelyayan/quran-play/releases/latest">
+      <img src="https://img.shields.io/github/v/release/lionelyayan/quran-play?label=Download%20APK&logo=android&color=3DDC84" />
+    </a>
+    <img src="https://img.shields.io/github/actions/workflow/status/lionelyayan/quran-play/release.yml?label=Build&logo=github" />
+  </p>
 </div>
+
+---
+
+## 📱 Preview
+### Screenshots
+
+| Surah List | Ayah List | Audio Player |
+|:-----------:|:---------:|:------------:|
+| ![](docs/screenshot_surah.jpeg) | ![](docs/screenshot_ayah.jpeg) | ![](docs/screenshot_player.jpeg) |
 
 ---
 
@@ -116,7 +131,7 @@ lib/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/quran-play.git
+git clone https://github.com/lionelyayan/quran-play.git
 cd quran-play
 
 # 2. Install dependencies
@@ -176,6 +191,52 @@ dev_dependencies:
 - **[Dribbble](https://dribbble.com/)** — Design inspiration
 - **[Flutter](https://flutter.dev)** & the amazing open-source community
 
+---
+
+## ⬇️ Download
+
+[![Download APK](https://img.shields.io/github/v/release/lionelyayan/quran-play?label=Download%20APK&logo=android&color=3DDC84)](https://github.com/lionelyayan/quran-play/releases/latest)
+
+Download the latest APK from the [**GitHub Releases**](https://github.com/lionelyayan/quran-play/releases/latest) page.
+
+> ✅ Works on **all Android devices** — Android 5.0 (API 21) or higher.
+
+---
+
+## 🔄 CI / CD Pipeline
+
+This project uses **GitHub Actions** to automatically build and publish releases.
+
+### How to release a new version
+
+```bash
+# 1. Update version in pubspec.yaml
+#    e.g. version: 1.1.0+2
+
+# 2. Commit your changes
+git add .
+git commit -m "chore: bump version to v1.1.0"
+
+# 3. Create and push a version tag
+git tag v1.1.0
+git push origin main --tags
+```
+
+GitHub Actions will automatically:
+1. ✅ Analyze the code
+2. 🧪 Run tests
+3. 🔨 Build release APK (split per ABI)
+4. 🎉 Publish to GitHub Releases with download links
+
+Workflow file: [`.github/workflows/release.yml`](.github/workflows/release.yml)
+
+---
+
+## 📄 License
+
+MIT License © 2025 [Your Name](https://github.com/lionelyayan)
+
+See [LICENSE](LICENSE) for details.
 
 ---
 
@@ -185,6 +246,7 @@ dev_dependencies:
     <a href="https://alquran.cloud/">API</a> •
     <a href="https://flaticon.com/">Icons</a> •
     <a href="https://undraw.co/">Illustrations</a> •
-    <a href="https://dribbble.com/">Design Inspiration</a>
+    <a href="https://dribbble.com/">Design Inspiration</a> •
+    <a href="https://github.com/lionelyayan/quran-play/releases/latest">⬇️ Download APK</a>
   </p>
 </div>
